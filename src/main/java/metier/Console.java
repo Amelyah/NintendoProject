@@ -1,11 +1,34 @@
 package metier;
 
-public class Console {
+import java.time.LocalDate;
+
+public abstract class  Console  {
 
 	private String nom;
+	public int getPrix() {
+		return prix;
+	}
 
-	public Console(String nom) {
+	public void setPrix(int prix) {
+		this.prix = prix;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+	private int prix ;
+	private LocalDate date;
+	
+
+	public Console(String nom, int prix, LocalDate date) {
 		this.nom = nom;
+		this.date = date;
+		this.prix = prix;
 	}
 
 	public String getNom() {
