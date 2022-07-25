@@ -1,8 +1,12 @@
 package metier;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Clien {
 	private String nom;
 	private String prenom;
+	private List<Achat> listeAchats = new ArrayList();
 	
 	public Clien(String nom, String prenom) {
 		super();
@@ -25,6 +29,21 @@ public class Clien {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
+
+	public List<Achat> getListeAchat() {
+		return listeAchats;
+	}
+
+	public void setListeAchat(List<Achat> listeAchats) {
+		this.listeAchats = listeAchats;
+	}
+
+	@Override
+	public String toString() {
+		return "Clien [nom=" + nom + ", prenom=" + prenom + ", listeAchats=" + listeAchats + "]";
+	}
+	
+	
 	
 
 }
