@@ -11,6 +11,7 @@ import metier.Boutique;
 import metier.Clien;
 import metier.Console;
 import metier.Jeu;
+import metier.Salon;
 
 
 public class Test {
@@ -32,10 +33,10 @@ public class Test {
 	//	Clien c1 = new Clien("Amelia","Benlemouy");
 		
 		// Création d'objets console pour les constructeurs jeu
-		Console ps1 = new Console("PS1");
-		Console ps2 = new Console("PS2");
-		Console nintendo = new Console("Nintendo");
-		Console ps5 = new Console("PS5");
+		Console ps1 = new Salon("PS1",100,null);
+		Console ps2 = new Salon("PS2",100,null);
+		Console nintendo = new Salon("Nintendo",100,null);
+		Console ps5 = new Salon("PS5",100,null);
 		
 		// Création d'une boutique pour le constructeur jeu
 		//Boutique b1 = new Boutique("PlayStore", "25 avenue des champs Elysée 75000 Paris");
@@ -58,10 +59,6 @@ public class Test {
 		Collections.addAll(listeAchats, a1,a2,a3);
 		c1.setListeAchat(listeAchats);
 		
-		/*Boutique b1 = new Boutique("PlayStore", "25 avenue des champs Elysée 75000 Paris");
-		List<Jeu> listeJeux = new ArrayList();
-		Collections.addAll(listeJeux, j1,j2,j3);
-		b1.setListeJeux(listeJeux);*/
 
 	}
 
